@@ -1,0 +1,31 @@
+{
+  "name": "leagueoflegendspremium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scristo2/leagueoflegendspremium.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scristo2/leagueoflegendspremium/issues"
+  },
+  "homepage": "https://github.com/scristo2/leagueoflegendspremium#readme",
+  "dependencies": {
+    "cookies-next": "^2.0.3",
+    "hcaptcha": "^0.1.1",
+    "isomorphic-fetch": "^3.0.0",
+    "next": "^12.0.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
