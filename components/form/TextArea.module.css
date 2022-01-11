@@ -29,4 +29,5 @@
     color: #43383e;
     font-weight: 700;
     height: 150px;
+    overflow: auto;
 }

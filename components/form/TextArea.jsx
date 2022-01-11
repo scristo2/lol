@@ -15,7 +15,7 @@ class Textarea extends Component{
 
         return(<div className={style.input_form}>
     
-           <textarea spellCheck="false" required className={style.textarea} name="messageuser" placeholder="Your message..."></textarea>
+           <textarea spellCheck="false" required className={style.textarea} name="messageUser" placeholder="Your message..."></textarea>
 
         </div>);
     }

@@ -2,17 +2,22 @@ import { Component } from "react";
 import Head from "next/head";
 import style from "../styles/Home.module.css";
 import Header from "../components/Header";
-import { getCookies, getCookie, setCookies, removeCookies } from "cookies-next";
-import { checkhCAPTCHA } from "../utils/hcaptcha";
-import Script from "next/script";
+import _fetch from "isomorphic-fetch";
+import languag from "../public/language.json";
 class Home extends Component {
+
+    constructor(props) {
+
+        super(props);
+
+    }
 
 
     render() {
 
         return (
 
-            <>
+            <div>
                 <Head>
                     <meta httpEquiv="content-type" content="text.html" charSet="utf-8" />
                     <meta name="viewport" content="width=device-width initial-scale=1" />
@@ -21,8 +26,8 @@ class Home extends Component {
                     <meta httpEquiv="Cache-Control" content="no-cache, mustrevalidate" />
                     <meta httpEquiv="Pragma" content="no-cache" />
                     <meta name="author" content="Sergio Cristobal Colino" />
-                    <meta name="description" content="" />
-                    <meta name="keywords" content="" />
+                    <meta name="description" content={languag[this.props.lang].description} />
+                    <meta name="keywords" content={languag[this.props.lang].keywords} />
                     <meta name="robots" content="index" />
                     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
                     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
@@ -38,16 +43,19 @@ class Home extends Component {
                     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
                     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
                     <link rel="manifest" href="/manifest.json" />
+                    <link rel="alternate" hrefLang="es" href="https://leagueoflegendspremium.es/" />
+                    <link rel="alternate" hrefLang="fr" href="https://fr.leagueoflegendspremium.com/" />
+                    <link rel="alternate" hrefLang="x-default" href="https://leagueoflegendspremium.com/" />
                     <meta name="msapplication-TileColor" content="#ffffff" />
                     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
                     <meta name="theme-color" content="#ffffff" />
+                    <title>{languag[this.props.lang].title}</title>
                 </Head>
                 <main className={style.container}>
-                  
-                    <Header response={this.props.response} secret={this.props.secret}/>
+                    <Header />
                 </main>
                 <footer className={style.footer}></footer>
-            </>
+            </div>
         );
     }
 }
@@ -56,10 +64,63 @@ export default Home;
 
 export async function getServerSideProps(context) {
 
-    const datas = {response : process.env.TOKEN_HCAPTCHA, secret: process.env.SECRET_HCAPTCHA};
+    
+
+    {/*
+     if (context.locale === "fr" || context.locale === "es") {
+
+        var ulrDestiny = "";
+
+        switch (context.locale) {
+
+            case 'fr':
+
+                ulrDestiny = "https://fr.leagueoflegendspremium.com";
+                break;
+
+            case 'es':
+
+                ulrDestiny = "https://leagueoflegendspremium.es";
+                break;
+
+
+
+        }
+
+        return {
+
+            redirect: {
+
+                permanent: false,
+                destination: ulrDestiny
+            }
+        }
+    
+    
+    }else{
+
+        return {
+
+
+            props: {
+    
+                props: {}
+            }
+        }
+    }
+    */}
+
 
     return {
 
-        props: datas
+        props : {
+
+             lang : context.locale
+        }
     }
+
+    
 }
+
+
+
