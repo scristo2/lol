@@ -1,4 +1,4 @@
-eimport { Component } from "react";
+import { Component } from "react";
 import Image from "next/image";
 import style from "../components/Header.module.css";
 import Router from "next/router";
