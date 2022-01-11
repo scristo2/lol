@@ -123,7 +123,7 @@ class Header extends Component {
         return (<>
             <header className={style.header}>
                 <div className={style.header_div_title}>
-                    <p className={style.header_title}>For sale this Domain</p>
+                    <p className={style.header_title}>For sale this Domain premium</p>
                 </div>
                 <div className={style.notification} style={{ display: this.state.displayNotification }}>
                     <div className={style.notification_div_image}>
