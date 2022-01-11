@@ -74,7 +74,7 @@ class Header extends Component {
 
 
 
-            const reponseRecaptcha = await _fetch('/api/recaptcha', {
+            const reponseRecaptcha = await _fetch('/api/recaptchas', {
 
                 method: 'POST',
                 body: datasForm,
