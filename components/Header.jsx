@@ -35,7 +35,7 @@ class Header extends Component {
         return (<>
             <header className={style.header}>
                 <div className={style.header_div_title}>
-                    <p className={style.header_title}>For sale this super domain</p>
+                    <p className={style.header_title}>For sale this super domaifffn</p>
                 </div>
                 <div className={style.header_div_form}>
                     <form className={style.header_form} onSubmit={this.sendEmail.bind(this)}>
