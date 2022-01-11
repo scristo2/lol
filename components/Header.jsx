@@ -1,4 +1,4 @@
-import { Component } from "react";
+eimport { Component } from "react";
 import Image from "next/image";
 import style from "../components/Header.module.css";
 import Router from "next/router";
@@ -35,7 +35,7 @@ class Header extends Component {
         return (<>
             <header className={style.header}>
                 <div className={style.header_div_title}>
-                    <p className={style.header_title}>For sale this super domaifffn</p>
+                    <p className={style.header_title}>For sale new version</p>
                 </div>
                 <div className={style.header_div_form}>
                     <form className={style.header_form} onSubmit={this.sendEmail.bind(this)}>
