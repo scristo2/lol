@@ -19,7 +19,7 @@ class Header extends Component {
         super(props);
         this.state = {
 
-            displayNotification: 'none',
+            displayNotification: !this.props.prefixNumber ? "flex" : "none", //if ocurred an error to get prexfix number data
             messageError: "An ocurred an error.Try again!",
             displayRequiredCapctha: 'none',
             displaySubmit: 'flex',
@@ -69,12 +69,14 @@ class Header extends Component {
                 email: e.target.emailUser.value,
                 phone: e.target.phoneUser.value,
                 message: e.target.messageUser.value,
+                prefix : e.target.prefixNumber.value,
+                prefixCountry : e.target.prefixCountry.value,
                 tokenCaptcha: token
             });
 
 
 
-            const reponseRecaptcha = await _fetch('/api/reCAPTCHA', {
+            const reponseRecaptcha = await _fetch('/api/recaptcha', {
 
                 method: 'POST',
                 body: datasForm,
@@ -136,7 +138,7 @@ class Header extends Component {
                     <form className={style.header_form} onSubmit={this.submitForm}>
                         <Input logo={person} type="text" placeholder="Name" name="nameUser" />
                         <Input logo={logoEmail} type="email" placeholder="Email" name="emailUser" />
-                        <Input logo={telephone} type="tel" placeholder="Phone" name="phoneUser" />
+                        <Input logo={telephone} prefixNumber={this.props.prefixNumber} type="tel" placeholder="Phone" name="phoneUser" />
                         <Textarea />
                         <div className={style.header_div_form_capctha}>
                             <div className={style.required_captcha} style={{ display: this.state.displayRequiredCapctha }}>

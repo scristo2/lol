@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" viewBox="0 0 768 768" version="1.1">
+  <defs id="defs4">
+    <clipPath id="clipPathFlag" clipPathUnits="userSpaceOnUse">
+      <rect id="rect3918" fill-opacity=".67" ry="57" height="511" width="511" y=".5" x=".5"/>
+    </clipPath>
+    <linearGradient id="linearGradient3852-0">
+      <stop id="stop3854-6" stop-color="#dbe3db" offset="0"/>
+      <stop id="stop3856-1" stop-color="#dbe3db" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient5122" x1="342.19" xlink:href="#linearGradient3852-0" gradientUnits="userSpaceOnUse" y1="705.76" gradientTransform="matrix(1.1571 0 0 1.3167 -91.204 -253.99)" x2="358.08" y2="523.41"/>
+    <linearGradient id="linearGradient5125" x1="405.26" xlink:href="#linearGradient3852-0" gradientUnits="userSpaceOnUse" y1="118.06" gradientTransform="matrix(.95303 0 0 .86647 11.575 -4.5016)" x2="405.75" y2="360.92"/>
+    <filter id="filter5740">
+      <feGaussianBlur id="feGaussianBlur5742" stdDeviation="5.12"/>
+    </filter>
+    <clipPath id="clipPath5796" clipPathUnits="userSpaceOnUse">
+      <rect id="rect5798" ry="57" height="512" width="512" stroke="#00fa00" y="0" x="0" stroke-width="20" fill="none"/>
+    </clipPath>
+    <filter id="filter5912">
+      <feGaussianBlur id="feGaussianBlur5914" stdDeviation="17.92"/>
+    </filter>
+  </defs>
+  <g id="template-button">&gt;
+  <g id="00" transform="translate(90,90)"><rect id="shadow" ry="57" height="512" filter="url(#filter5912)" width="512" stroke="#a8a8a8" y="56" x="38" stroke-width="5"/></g>
+  <g id="01" transform="translate(128,128)" clip-path="url(#clipPathFlag)"><rect id="mask" ry="57" height="512" width="512" y="0" x="0" fill="#00f"/><g id="flag"><rect id="rect580" fill-rule="evenodd" height="512" width="512" y="-.0000039058" x=".0040666" stroke-width="1pt" fill="#00006a"/><g id="g560" transform="matrix(1.0176 0 0 .95605 -.00099034 -1.0435)"><path id="path572" d="m64.501 291.57 514.08 508.63h105.45l-502.98-508.39-116.55-0.24z" fill-rule="evenodd" transform="matrix(.46237 0 0 .47458 -29.823 -137.28)" stroke-width="1pt" fill="#fff"/><path id="path577" d="m105.54 296.01 503.84 506.72 39.211-0.619-505.95-506.11h-37.1z" fill-rule="evenodd" transform="matrix(-.46190 0 0 -.47635 317.39 383.47)" stroke-width="1pt" fill="#f00"/><path id="path581" d="m64.501 291.57 514.08 508.63h105.45l-502.98-508.39-116.55-0.24z" fill-rule="evenodd" transform="matrix(-.46237 0 0 .47458 316.28 -137.28)" stroke-width="1pt" fill="#fff"/><path id="path579" d="m105.54 296.01 503.84 506.72 39.211 0.02-505.95-506.74h-37.1z" fill-rule="evenodd" transform="matrix(-.46172 0 0 .47635 317.32 -139.91)" stroke-width="1pt" fill="#f00"/><rect id="rect570" fill-rule="evenodd" height="241.38" width="45.831" y="1.0945" x="120.31" stroke-width="1pt" fill="#fff"/><rect id="rect569" fill-rule="evenodd" height="48.276" width="286.44" y="97.646" x=".004935" stroke-width="1pt" fill="#fff"/><rect id="rect574" fill-rule="evenodd" height="241.38" width="25.78" y="1.0945" x="130.34" stroke-width="1pt" fill="#f00"/><rect id="rect575" fill-rule="evenodd" height="24.138" width="286.44" y="109.72" x=".004934" stroke-width="1pt" fill="#f00"/></g><g id="g8203" transform="matrix(.86562 0 0 .86562 -61.26 103.94)"><g id="g591" transform="matrix(1.0266 0 0 1.0321 -.00099878 .00044559)"><polygon id="polygon589" d="m 519.06818,108.72801 -22.02531,-16.19344 -22.83816,15.02531 8.59468,-25.951362 -21.3473,-17.077307 27.33711,0.154617 9.64481,-25.579666 8.30058,26.04692 27.30812,1.268204 -22.20707,15.943265 z" fill-rule="evenodd" transform="translate(0 -1.9662)" points="519.07 108.73 497.04 92.535 474.2 107.56 482.8 81.608 461.45 64.531 488.79 64.686 498.43 39.106 506.74 65.153 534.04 66.421 511.84 82.364" stroke-width="1pt" fill="#fff"/><polygon id="polygon590" d="m 511.20355,91.032508 -13.4698,-8.733191 -12.86977,9.595493 4.14336,-15.509251 -13.10283,-9.274702 16.03054,-0.852053 4.77177,-15.327575 5.76406,14.982654 16.05195,-0.19826 -12.46816,10.111842 z" fill-rule="evenodd" transform="matrix(.99883 .048364 -.048364 .99883 4.0356 -21.997)" points="511.2 91.032 497.73 82.299 484.86 91.895 489.01 76.386 475.9 67.111 491.94 66.259 496.71 50.931 502.47 65.914 518.52 65.716 506.06 75.828" stroke-width="1pt" fill="#f00"/></g><g id="g594" transform="matrix(1.0266 0 0 1.0321 -86.795 144.08)"><polygon id="polygon595" d="m 519.06818,108.72801 -22.02531,-16.19344 -22.83816,15.02531 8.59468,-25.951362 -21.3473,-17.077307 27.33711,0.154617 9.64481,-25.579666 8.30058,26.04692 27.30812,1.268204 -22.20707,15.943265 z" fill-rule="evenodd" transform="translate(0 -1.9662)" points="519.07 108.73 497.04 92.535 474.2 107.56 482.8 81.608 461.45 64.531 488.79 64.686 498.43 39.106 506.74 65.153 534.04 66.421 511.84 82.364" stroke-width="1pt" fill="#fff"/><polygon id="polygon596" d="m 511.20355,91.032508 -13.4698,-8.733191 -12.86977,9.595493 4.14336,-15.509251 -13.10283,-9.274702 16.03054,-0.852053 4.77177,-15.327575 5.76406,14.982654 16.05195,-0.19826 -12.46816,10.111842 z" fill-rule="evenodd" transform="matrix(.99883 .048364 -.048364 .99883 4.0356 -21.997)" points="511.2 91.032 497.73 82.299 484.86 91.895 489.01 76.386 475.9 67.111 491.94 66.259 496.71 50.931 502.47 65.914 518.52 65.716 506.06 75.828" stroke-width="1pt" fill="#f00"/></g><g id="g597" transform="matrix(1.0266 0 0 1.0321 90.83 129.88)"><polygon id="polygon598" d="m 519.06818,108.72801 -22.02531,-16.19344 -22.83816,15.02531 8.59468,-25.951362 -21.3473,-17.077307 27.33711,0.154617 9.64481,-25.579666 8.30058,26.04692 27.30812,1.268204 -22.20707,15.943265 z" fill-rule="evenodd" transform="translate(0 -1.9662)" points="519.07 108.73 497.04 92.535 474.2 107.56 482.8 81.608 461.45 64.531 488.79 64.686 498.43 39.106 506.74 65.153 534.04 66.421 511.84 82.364" stroke-width="1pt" fill="#fff"/><polygon id="polygon599" d="m 511.20355,91.032508 -13.4698,-8.733191 -12.86977,9.595493 4.14336,-15.509251 -13.10283,-9.274702 16.03054,-0.852053 4.77177,-15.327575 5.76406,14.982654 16.05195,-0.19826 -12.46816,10.111842 z" fill-rule="evenodd" transform="matrix(.99883 .048364 -.048364 .99883 4.0356 -21.997)" points="511.2 91.032 497.73 82.299 484.86 91.895 489.01 76.386 475.9 67.111 491.94 66.259 496.71 50.931 502.47 65.914 518.52 65.716 506.06 75.828" stroke-width="1pt" fill="#f00"/></g><g id="g600" transform="matrix(1.0266 0 0 1.0321 -2.0195 334.84)"><polygon id="polygon601" d="m 519.06818,108.72801 -22.02531,-16.19344 -22.83816,15.02531 8.59468,-25.951362 -21.3473,-17.077307 27.33711,0.154617 9.64481,-25.579666 8.30058,26.04692 27.30812,1.268204 -22.20707,15.943265 z" fill-rule="evenodd" transform="translate(0 -1.9662)" points="519.07 108.73 497.04 92.535 474.2 107.56 482.8 81.608 461.45 64.531 488.79 64.686 498.43 39.106 506.74 65.153 534.04 66.421 511.84 82.364" stroke-width="1pt" fill="#fff"/><polygon id="polygon602" d="m 511.20355,91.032508 -13.4698,-8.733191 -12.86977,9.595493 4.14336,-15.509251 -13.10283,-9.274702 16.03054,-0.852053 4.77177,-15.327575 5.76406,14.982654 16.05195,-0.19826 -12.46816,10.111842 z" fill-rule="evenodd" transform="matrix(.99883 .048364 -.048364 .99883 4.0356 -21.997)" points="511.2 91.032 497.73 82.299 484.86 91.895 489.01 76.386 475.9 67.111 491.94 66.259 496.71 50.931 502.47 65.914 518.52 65.716 506.06 75.828" stroke-width="1pt" fill="#f00"/></g></g></g></g>
+  <g id="02" transform="translate(0,38)"><path id="path3862-8" style="color:#000000" fill="url(#linearGradient5125)" d="m214.21 111.21c-45.245 0.18809-68.716 7.7308-64.094 83.553l2.8252 46.345c47.474 5.5124 56.664 18.445 104.36 21.914 68.073 4.9513 67.937 5.4209 130.56-14.384 62.628-19.805 5.8248-65.247 207.32-57.82 4.6033 0.16968 17.314-3.0527 27.462-12.15 5.5817-46.524-2.7842-69.143-66.934-68.876z"/><path id="path3079-9" style="color:#000000" fill="url(#linearGradient5122)" d="m531.03 495.17c-31.605 19.022-27.601 31.26-37.913 32.573-94.704 12.053-145.98-0.72701-165.8-12.061-59.588-34.078-68.468-13.014-100.22-16.574-20.115-2.2551-59.245 12.984-73.388 44.344 3.4722 27.608 18.111 32.098 44.281 31.986l356.06-1.5268c69.692-0.29885 56.335-8.4926 65.543-56.039-14.772-21.671-13.157 9.109-44.224-30.717z"/><rect id="rect5734" transform="translate(128,90)" clip-path="url(#clipPath5796)" ry="57" height="512" filter="url(#filter5740)" width="512" stroke="#000" y="0" x="0" stroke-width="20" fill="none"/></g>
+ </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>nz</dc:title>
+        <dc:date>2011-08-21T12:01:28</dc:date>
+        <dc:description>country flag buttons (with ISO-3166-1 naming convention)</dc:description>
+        <dc:source>http://openclipart.org/detail/156919/nz-by-koppi</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>koppi</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>ISO3166-1</rdf:li>
+            <rdf:li>button</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>country</rdf:li>
+            <rdf:li>flag</rdf:li>
+            <rdf:li>flags</rdf:li>
+            <rdf:li>squared</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

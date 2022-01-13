@@ -4,6 +4,8 @@ import style from "../styles/Home.module.css";
 import Header from "../components/Header";
 import _fetch from "isomorphic-fetch";
 import languag from "../public/language.json";
+import {prefixNumber}  from "../utils/prefixNumber";
+
 class Home extends Component {
 
     constructor(props) {
@@ -26,8 +28,8 @@ class Home extends Component {
                     <meta httpEquiv="Cache-Control" content="no-cache, mustrevalidate" />
                     <meta httpEquiv="Pragma" content="no-cache" />
                     <meta name="author" content="Sergio Cristobal Colino" />
-                    <meta name="description" content={languag[this.props.lang].description} />
-                    <meta name="keywords" content={languag[this.props.lang].keywords} />
+                    <meta name="description" content="" />
+                    <meta name="keywords" content="" />
                     <meta name="robots" content="index" />
                     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
                     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
@@ -49,10 +51,10 @@ class Home extends Component {
                     <meta name="msapplication-TileColor" content="#ffffff" />
                     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
                     <meta name="theme-color" content="#ffffff" />
-                    <title>{languag[this.props.lang].title}</title>
+                    <title>For sale</title>
                 </Head>
                 <main className={style.container}>
-                    <Header />
+                    <Header prefixNumber={this.props.prefixNumber}/>
                 </main>
                 <footer className={style.footer}></footer>
             </div>
@@ -62,63 +64,19 @@ class Home extends Component {
 
 export default Home;
 
-export async function getServerSideProps(context) {
 
-    
+export async function getServerSideProps(context){
 
-    {/*
-     if (context.locale === "fr" || context.locale === "es") {
-
-        var ulrDestiny = "";
-
-        switch (context.locale) {
-
-            case 'fr':
-
-                ulrDestiny = "https://fr.leagueoflegendspremium.com";
-                break;
-
-            case 'es':
-
-                ulrDestiny = "https://leagueoflegendspremium.es";
-                break;
+     const prefix = await prefixNumber() || false;
 
 
-
-        }
-
-        return {
-
-            redirect: {
-
-                permanent: false,
-                destination: ulrDestiny
-            }
-        }
-    
-    
-    }else{
-
-        return {
-
-
-            props: {
-    
-                props: {}
-            }
-        }
-    }
-    */}
-
-
-    return {
+     return {
 
         props : {
 
-             lang : context.locale
+            prefixNumber : prefix
         }
-    }
-
+     }
     
 }
 

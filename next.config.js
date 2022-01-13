@@ -2,7 +2,7 @@ module.exports = {
   i18n: {
     locales: ['en', 'es', 'fr'],
     defaultLocale: 'en',
-   
+
   },
 
   images: {
@@ -10,6 +10,5 @@ module.exports = {
     domains: ['orfibesa.es', 'flagcdn.com']
   },
 
-
-
+  
 };
