@@ -66,7 +66,7 @@ class Form extends Component {
         });
 
 
-        const res = await _fetch("/api/recaptcha", {
+        const res = await _fetch("/api/reCAPTCHA", {
 
             method: 'POST',
             body: datas,
