@@ -1,22 +1,25 @@
-const {verify} = require('hcaptcha');
+import _fetch from "isomorphic-fetch";
 
 const checkhCAPTCHA = (secret, token) => {
 
-    const data = verify(secret, token)
-    .then((data) => {
+    const formData = new URLSearchParams();
 
-        if(data.success === true){
+    formData.append("response", token);
+    formData.append("secret", secret);
 
-            return true;
-        
-        }else{
+    const data = _fetch("https://hcaptcha.com/siteverify", {
 
-            return false;
+        method: 'POST',
+        body: formData.toString(),
+        headers: {
+
+            "Content-Type": "application/x-www-form-urlencoded"
         }
-    }).catch((e) => false )
-
+    }).then(res => res.json())
+    .then(response => response.success)
+    .catch(() => false);
 
     return data;
 }
 
-export {checkhCAPTCHA};
+export { checkhCAPTCHA };

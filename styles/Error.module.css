@@ -1,0 +1,42 @@
+.App_header{
+
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App_header_div_logo{
+
+  margin-top: 30px;
+}
+
+
+.App_main{
+
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.margin{
+
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.margin_title{
+
+  color: red;
+  font-family: cursive;
+}
+
+.margin_a{
+
+
+   text-decoration: none;
+   color: red;
+   font-weight: 700;
+}
