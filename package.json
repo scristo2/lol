@@ -22,7 +22,6 @@
   "homepage": "https://github.com/scristo2/leagueoflegendspremium#readme",
   "dependencies": {
     "@hcaptcha/react-hcaptcha": "^1.0.0",
-    "@popperjs/core": "^2.11.2",
     "bootstrap": "^4.6.0",
     "cookies-next": "^2.0.3",
     "fs": "^0.0.1-security",
