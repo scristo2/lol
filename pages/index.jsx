@@ -7,6 +7,7 @@ import logo from "../public/images/for-sale.svg";
 import { getDate } from "../utils/date";
 import { addVisit } from "../utils/addVisit";
 import language from "../public/language.json";
+import { getCookie } from "cookies-next";
 
 class Home extends Component {
 
@@ -110,15 +111,15 @@ export default Home;
 
 
 export function getServerSideProps(context) {
-
-
+    
+    
 
     return {
 
 
         props: {
 
-            ip: context.req.connection.remoteAddress || "undefined",
+            ip: context.req.cookies.ip,
             locale: context.locale || "undefined"
 
         }

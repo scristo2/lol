@@ -1,9 +1,9 @@
-import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-export function middleware(req : NextRequest){
+export function middleware(req : NextRequest, res : NextResponse){
 
-    const res = NextResponse.next();
-    res.cookie('ip', req.ip);
-    return res;
+    const response = NextResponse.next();
+    response.cookie('ip', req.ip || "undefined");
+
+    return response;
 }
