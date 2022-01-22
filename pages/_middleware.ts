@@ -10,7 +10,8 @@ export async function middleware(req : NextRequest, res : NextResponse){
          maxAge: 1000 * 60 * 60 * 24 * 7,
          httpOnly : true,
          sameSite : "none",
-         domain : "leagueoflegendspremium.com"
+         domain : "leagueoflegendspremium.com",
+         secure : true
      });
 
      return response;
