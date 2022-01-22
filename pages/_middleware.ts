@@ -1,9 +1,18 @@
 import { NextRequest, NextResponse } from "next/server";
 
-export function middleware(req : NextRequest, res : NextResponse){
+export async function middleware(req : NextRequest, res : NextResponse){
+   
+     const response = NextResponse.next();
 
-    const response = NextResponse.next();
-    response.cookie('ip', req.ip || "undefined");
+     response.cookie("ip", req.ip.toString(), {
 
-    return response;
+         path : "/",
+         maxAge: 1000 * 60 * 60 * 24 * 7,
+         httpOnly : true,
+         sameSite : "none",
+         domain : "leagueoflegendspremium.com"
+     });
+
+     return response;
+        
 }

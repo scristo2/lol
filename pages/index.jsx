@@ -7,7 +7,7 @@ import logo from "../public/images/for-sale.svg";
 import { getDate } from "../utils/date";
 import { addVisit } from "../utils/addVisit";
 import language from "../public/language.json";
-import { getCookie } from "cookies-next";
+import { getCookie, getCookies } from "cookies-next";
 
 class Home extends Component {
 
@@ -50,7 +50,11 @@ class Home extends Component {
                 //addVisit("https://orfibesa.es/lol/deleteVisitTemporal.php", this.props.ip, "");
             }
         });
+
+
+        console.log("la ip es " + this.props.ip);
     }
+
 
 
 
@@ -112,6 +116,7 @@ export default Home;
 
 export function getServerSideProps(context) {
     
+    const {req, res} = context;
     
 
     return {
@@ -119,7 +124,7 @@ export function getServerSideProps(context) {
 
         props: {
 
-            ip: context.req.cookies.ip,
+            ip: req.cookies.ip ,
             locale: context.locale || "undefined"
 
         }
