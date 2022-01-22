@@ -1,21 +1,118 @@
 {
     "en": {
         "title" : "For-Sale Domain",
-        "description" : "",
-        "keywords": "lol, leagueoflegends, ashe"
+        "form" : {
+            "titleForm" : "Contact Us",
+            "titleForm2" : "We would love to hear from you !",
+            "name" : "First name",
+            "placeholderName" : "Enter First Name",
+            "lastName" : "Last Name",
+            "placeholderLastName" : "Enter Last Name",
+            "placeholderEmail" : "Enter email",
+            "country" : "Country",
+            "phone" : "Phone",
+            "placeholderPhone" : "Enter you phone number",
+            "message" : "Message",
+            "send" : "Send"
+        },
+
+        "footer" : {
+
+            "description" : "This page has been created in react and bootstrap with a lot of love and care. Any error or failure, let us know in the message",
+            "copyright" : "All rights reserved",
+            "suscribed" : "Subscribe to receive our news about new domains, apis and other services."
+            
+        },
+
+        "success" : {
+
+            "title" : "Success",
+            "message" : "We received your purchase request",
+            "message1" : "we'll be in touch shortly!"
+        },
+
+        "error" : {
+
+             "title" : "An ocurred an error!",
+             "message" : "Try again! - lets take you",
+             "back" : "Back"
+        }
+        
     },
 
     "es" : {
 
         "title" : "Se vende dominio",
-        "description" : "",
-        "keywords" : "lol, leagueoflegends, ashe"
+        "form" : {
+            "titleForm" : "Contactanos",
+            "titleForm2" :"¡Nos encantaría saber de usted !",
+            "name" : "Nombre",
+            "placeholderName" : "Introduce tu nombre",
+            "lastName" : "Apellidos",
+            "placeholderLastName" : "Introduce tus apellidos",
+            "placeholderEmail" : "Introduce tu Email",
+            "country" : "Pais",
+            "phone" : "Telefono",
+            "placeholderPhone" : "Introduce tu numero de telefono",
+            "message" : "Mensaje",
+            "send" : "Enviar"
+        },
+        "footer" : {
+
+            "description" : "Esta página ha sido creada en react y bootstrap con mucho amor y cariño. Cualquier error o fallo, háznoslo saber en el mensaje",
+            "copyright" : "Todos los derechos reservados",
+            "suscribed" : "Suscríbete para recibir nuestras novedades sobre nuevos dominios, apis y otros servicios."
+        },
+
+        "success" : {
+
+            "title" : "Exito",
+            "message" : "Recibimos tu solicitud de compra",
+            "message1" : "¡estaremos en contacto en breve!"
+        },
+        "error" : {
+
+            "title" : "¡Ha ocurrido un error!",
+            "message" : "¡Intentalo otra vez! - vamos a llevarte de vuelta",
+            "back" : "Volver"
+       }
     },
 
     "fr" : {
 
         "title": "Domaine à vendre",
-        "description" : "",
-        "keywords" : "lol, leagueoflegends, ashe"
+        "form" : {
+            "titleForm" : "Nous contacter",
+            "titleForm2" :"Nous serions ravis de vous entendre !",
+            "name" : "Prénom",
+            "placeholderName" : "Entrez votre prénom",
+            "lastName" : "Nom de famille",
+            "placeholderLastName" : "Entrer le nom de famille",
+            "placeholderEmail" : "entrer l'e-mail",
+            "country" : "Pays",
+            "phone" : "Téléphoner",
+            "placeholderPhone" : "Entrez votre numéro de téléphone",
+            "message" : "Message",
+            "send" : "Envoyer"
+        },
+        "footer" : {
+
+            "description" : "Cette page a été créée en react et en boostrap avec beaucoup d'amour et de soin. Toute erreur ou panne, faites-le nous savoir dans le message",
+            "copyright" : "Tous les droits sont réservés",
+            "suscribed" : "Abonnez-vous pour recevoir nos actualités sur les nouveaux domaines, API et autres services."
+        },
+
+        "success" : {
+
+            "title" : "Succès",
+            "message" : "Nous avons bien reçu votre demande d'achat",
+            "message1" : "nous vous contacterons sous peu !"
+        },
+        "error" : {
+
+            "title" : "Une erreur s'est produite !",
+            "message" : "essayer à nouveau! - permet de vous",
+            "back" : "Ramener"
+       }
     }
 }

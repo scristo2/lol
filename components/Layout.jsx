@@ -26,7 +26,7 @@ class Layout extends Component {
                     
                 }
             </AppMain>
-            <AppFooter></AppFooter>
+            <AppFooter lang={this.props.lang}></AppFooter>
            
         </div>);
     }
