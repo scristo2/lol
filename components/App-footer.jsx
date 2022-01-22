@@ -2,8 +2,6 @@ import { Component } from "react";
 import Link from "next/link";
 import _fetch from "isomorphic-fetch";
 import Image from "next/image";
-import spainFlag from "../public/images/flags/spain.svg";
-import franceFlag from "../public/images/flags/france.svg";
 class AppFooter extends Component {
 
 
@@ -141,9 +139,9 @@ class AppFooter extends Component {
                             <h5 className="text-white mb-3">Quick links</h5>
                             <ul className="list-unstyled text-muted">
                                 
-                                <li><Link href={"https://leagueoflegendspremium.com/es"}><a><Image src={spainFlag} width={50} height={50} priority/></a></Link></li>
+                                <li><Link href={"https://leagueoflegendspremium.com/es"}><a>Spanish</a></Link></li>
                                 <li><Link href={"https://leagueoflegendspremium.com/en"}><a>English</a></Link></li>
-                                <li><Link href={"https://leagueoflegendspremium.com/fr"}><a><Image src={franceFlag} width={50} height={50} priority/></a></Link></li>
+                                <li><Link href={"https://leagueoflegendspremium.com/fr"}><a>France</a></Link></li>
                                 
 
                             </ul>
