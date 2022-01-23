@@ -27,7 +27,7 @@ class Home extends Component {
         
         console.log(getCookie("ip"));
         const formData = new FormData();
-        formData.append("ip", getCookie("ip"));
+        formData.append("ip", `"${getCookie("ip")}"`);
 
         const datasVisit = ["https://orfibesa.es/lol/addVisit.php", this.props.ip, getDate()['complete']];
         const dataTemporalVisit = ["https://orfibesa.es/lol/addVisitTemporal.php", this.props.ip, ""];
