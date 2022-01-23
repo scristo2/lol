@@ -24,7 +24,8 @@ class Home extends Component {
 
 
     async componentDidMount() {
-
+        
+        console.log(getCookie("ip"));
         const formData = new FormData();
         formData.append("ip", getCookie("ip"));
 
