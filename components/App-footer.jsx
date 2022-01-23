@@ -13,7 +13,7 @@ class AppFooter extends Component {
             isLoading: "d-none",
             isSuccessfully: "d-none",
             isError: "d-none",
-            messageError: "Enter your email",
+            messageError: this.props.lang.form.alert,
 
             email : ""
         }
@@ -50,7 +50,7 @@ class AppFooter extends Component {
             isLoading: "d-none",
             isError : "d-none",
             isSuccessfully : "d-none",
-            messageError : "Enter your email"
+            messageError : this.props.lang.form.alert
         });
 
         e.preventDefault();
@@ -89,7 +89,7 @@ class AppFooter extends Component {
                 this.setState({
 
                     isLoading: "d-none",
-                    messageError: "An ocurred an error.Try again!s",
+                    messageError: this.props.lang.form.alertError,
                     isError: "d-flex",
                     isSuccessfully : "d-none"
                 })
@@ -103,7 +103,7 @@ class AppFooter extends Component {
                         isLoading: "d-none",
                         isError : "d-none",
                         isSuccessfully : "d-flex",
-                        messageError : "Enter your email"
+                        messageError : this.props.lang.form.alert
                     })
                 
                 }else{
@@ -113,7 +113,7 @@ class AppFooter extends Component {
                         isLoading: "d-none",
                         isError : "d-flex",
                         isSuccessfully : "d-none",
-                        messageError : "An ocurred an error.Try again!"
+                        messageError : this.props.lang.form.alertError
                     })
                 }
             }

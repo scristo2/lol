@@ -13,7 +13,9 @@
             "phone" : "Phone",
             "placeholderPhone" : "Enter you phone number",
             "message" : "Message",
-            "send" : "Send"
+            "send" : "Send",
+            "alert" : "Complete this field",
+            "alertError" : "An ocurred an error. Try again !"
         },
 
         "footer" : {
@@ -55,7 +57,9 @@
             "phone" : "Telefono",
             "placeholderPhone" : "Introduce tu numero de telefono",
             "message" : "Mensaje",
-            "send" : "Enviar"
+            "send" : "Enviar",
+            "alert" : "Complete este campo",
+            "alertError" : "Ha ocurrio un error.¡Intentalo de nuevo!"
         },
         "footer" : {
 
@@ -93,7 +97,9 @@
             "phone" : "Téléphoner",
             "placeholderPhone" : "Entrez votre numéro de téléphone",
             "message" : "Message",
-            "send" : "Envoyer"
+            "send" : "Envoyer",
+            "alert" : "Remplissez cette case",
+            "alertError" : "Une erreur s'est produite. Essayer à nouveau"
         },
         "footer" : {
 

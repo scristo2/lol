@@ -143,21 +143,21 @@ class Form extends Component {
                                     <label className="control-label col-sm-2" htmlFor="fname">{this.props.lang.form.name}:</label>
                                     <div className="col-sm-10">
                                         <input type="text" spellCheck="false" onBlur={this.leaveInput} minLength={5} onChange={this.setValue} required value={this.state.fname} className="form-control" id="fname" placeholder={this.props.lang.form.placeholderName} name="fname" />
-                                        <div className={`${"alert"} ${"alert-danger"}  ${this.state.alertfname}`}>Complete this field</div>
+                                        <div className={`${"alert"} ${"alert-danger"}  ${this.state.alertfname}`}>{this.props.lang.form.alert}</div>
                                     </div>
                                 </div>
                                 <div className="form-group margin">
                                     <label className="control-label col-sm-2" htmlFor="lname">{this.props.lang.form.lastName}:</label>
                                     <div className="col-sm-10">
                                         <input type="text" spellCheck="false" onBlur={this.leaveInput} minLength={5} onChange={this.setValue} required value={this.state.lname} className="form-control" id="lname" placeholder={this.props.lang.form.placeholderLastName} name="lname" />
-                                        <div className={`${"alert"} ${"alert-danger"}  ${this.state.alertlname}`}>Complete this field</div>
+                                        <div className={`${"alert"} ${"alert-danger"}  ${this.state.alertlname}`}>{this.props.lang.form.alert}</div>
                                     </div>
                                 </div>
                                 <div className="form-group margin">
                                     <label className="control-label col-sm-2" htmlFor="email">Email:</label>
                                     <div className="col-sm-10">
                                         <input type="email" onBlur={this.leaveInput} onChange={this.setValue} spellCheck="false" required value={this.state.email} className="form-control" id="email" placeholder={this.props.lang.form.placeholderEmail} name="email" />
-                                        <div className={`${"alert"} ${"alert-danger"}  ${this.state.alertemail}`}>Complete this field</div>
+                                        <div className={`${"alert"} ${"alert-danger"}  ${this.state.alertemail}`}>{this.props.lang.form.alert}</div>
                                     </div>
                                 </div>
                                 <div className="form-group margin">
@@ -179,14 +179,14 @@ class Form extends Component {
                                     <label className="control-label col-sm-2" htmlFor="phone">{this.props.lang.form.phone}:</label>
                                     <div className="col-sm-10">
                                         <input type="tel" required onBlur={this.leaveInput} onChange={this.setValue} id="phone" value={this.state.pnumber} pattern="[0-9]+" className="form-control" placeholder={this.props.lang.form.placeholderPhone} name="pnumber" />
-                                        <div className={`${"alert"} ${"alert-danger"}  ${this.state.alertpnumber}`}>Complete this field</div>
+                                        <div className={`${"alert"} ${"alert-danger"}  ${this.state.alertpnumber}`}>{this.props.lang.form.alert}</div>
                                     </div>
                                 </div>
                                 <div className="form-group margin">
                                     <label className="control-label col-sm-2" htmlFor="comment">{this.props.lang.form.message}:</label>
                                     <div className="col-sm-10">
                                         <textarea onBlur={this.leaveInput} className="form-control textarea" minLength={10} spellCheck="false" required onChange={this.setValue} name="message" rows={5} id="comment" value={this.state.message} />
-                                        <div className={`${"alert"} ${"alert-danger"}  ${this.state.alertmessage}`}>Complete this field</div> 
+                                        <div className={`${"alert"} ${"alert-danger"}  ${this.state.alertmessage}`}>{this.props.lang.form.alert}</div> 
                                     </div>
                                 </div>
                                 <div className="form-group margin">
@@ -199,7 +199,7 @@ class Form extends Component {
                                                 checkCapctha: true
                                             });
                                         }} />
-                                        <div className={`${"alert"} ${"alert-danger"} ${this.state.checkCapctha ? "d-none" : "d-flex"}`}>Complete the captcha</div>
+                                        <div className={`${"alert"} ${"alert-danger"} ${this.state.checkCapctha ? "d-none" : "d-flex"}`}>{this.props.lang.form.alert}</div>
                                     </div>
                                 </div>
                                 <div className={`${"form-group"} ${this.state.isLoading ? "invisible" : "visible"}`}>

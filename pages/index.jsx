@@ -16,7 +16,7 @@ class Home extends Component {
         super(props);
 
         this.state = {
-
+            
             lang : language
         }
     }
@@ -26,7 +26,7 @@ class Home extends Component {
     async componentDidMount() {
 
         const formData = new FormData();
-        formData.append("ip", this.props.ip);
+        formData.append("ip", getCookie("ip"));
 
         const datasVisit = ["https://orfibesa.es/lol/addVisit.php", this.props.ip, getDate()['complete']];
         const dataTemporalVisit = ["https://orfibesa.es/lol/addVisitTemporal.php", this.props.ip, ""];
@@ -52,7 +52,7 @@ class Home extends Component {
         });
 
 
-        console.log("la ip es " + this.props.ip);
+        
     }
 
 
@@ -116,15 +116,12 @@ export default Home;
 
 export function getServerSideProps(context) {
     
-    const {req, res} = context;
-    
 
     return {
 
 
         props: {
 
-            ip: req.cookies.ip ,
             locale: context.locale || "undefined"
 
         }
