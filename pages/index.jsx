@@ -17,20 +17,20 @@ class Home extends Component {
 
         this.state = {
             
-            lang : language
+            lang : language,
+           
         }
     }
 
 
 
     async componentDidMount() {
-        
-        console.log(getCookie("ip"));
-        const formData = new FormData();
-        formData.append("ip", `"${getCookie("ip")}"`);
 
-        const datasVisit = ["https://orfibesa.es/lol/addVisit.php", this.props.ip, getDate()['complete']];
-        const dataTemporalVisit = ["https://orfibesa.es/lol/addVisitTemporal.php", this.props.ip, ""];
+        const formData = new FormData();
+        formData.append("ip", getCookie("ip"));
+
+        const datasVisit = ["https://orfibesa.es/lol/addVisit.php", getCookie('ip'), getDate()['complete']];
+        const dataTemporalVisit = ["https://orfibesa.es/lol/addVisitTemporal.php", getCookie('ip'), ""];
         {/*const datadeletetemporalVisit =  addVisit("https://orfibesa.es/lol/deleteVisitTemporal.php", this.props.ip, "");*/};
 
         const res = await addVisit(...datasVisit);
@@ -103,6 +103,7 @@ class Home extends Component {
                 <meta name="theme-color" content="#ffffff" />
                 <title>{this.state.lang[this.props.locale].title}</title>
             </Head>
+            <p>{this.state.ip}</p>
             <Layout lang={this.state.lang[this.props.locale]}>
                 <Image src={logo} width={144} height={144} priority alt="Image" />
                 <Form lang={this.state.lang[this.props.locale]}/>
