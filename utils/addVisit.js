@@ -13,7 +13,8 @@ const addVisit = async (url, ip, date) => {
         body : formData.toString(),
         headers : {
 
-            'Content-Type' : "application/x-www-form-urlencoded"
+            'Content-Type' : "application/x-www-form-urlencoded",
+            
         }
     }).then(response => response.json())
     .then(result => result.status)
